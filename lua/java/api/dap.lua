@@ -32,7 +32,7 @@ function M.config_dap()
 				notify.info('DAP configured')
 			end
 		end)
-		.catch(get_error_handler('dap configuration failed'))
+		.catch(get_error_handler('dap configuration failed [dap]'))
 		.run()
 end
 

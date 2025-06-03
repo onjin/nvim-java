@@ -72,7 +72,7 @@ function M.config_dap()
 	return async(function()
 			JavaDap:new(jdtls()):config_dap()
 		end)
-		.catch(get_error_handler('dap configuration failed'))
+		.catch(get_error_handler('dap configuration failed [test]'))
 		.run()
 end
 
