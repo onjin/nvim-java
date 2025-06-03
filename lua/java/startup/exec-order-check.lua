@@ -29,7 +29,7 @@ function M.is_valid()
 
 	local clients = vim.lsp.get_clients
 			and vim.lsp.get_clients({ name = 'jdtls' })
-		or vim.lsp.get_active_clients({ name = 'jdtls' })
+		or vim.lsp.get_clients({ name = 'jdtls' })
 
 	if #clients > 0 then
 		return {
